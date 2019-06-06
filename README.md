@@ -2,7 +2,7 @@
 easily create simple VR-like Web site from 2D images using three.js（https://threejs.org/）
 
 ## Description
-this makes 2D designers and illustrators be able to easily create VR-like web site like this(<http://sonon.uh-oh.jp/atelier/atelier.html>).
+this makes 2D designers and illustrators be able to easily create VR-like web site like this(<https://sonon.uh-oh.jp/atelier/atelier.html>).
 
 ## Function
 * Set Images in 360 degree space.
