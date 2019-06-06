@@ -1,0 +1,86 @@
+body {
+    /*margin: 0;*/
+	margin: 0px;
+	height:100vh;
+	overflow: hidden;
+}
+
+.main {
+	position: absolute;
+	top: 0px; width: 100%;
+	padding: 0px;
+}
+
+.header{
+	background-color: rgba(255,255,255,0.5);
+}
+
+#vrbutton{
+	position: absolute;
+	right:2vh;
+	top:2vh;
+    text-decoration: none;
+    color: #2295bb;
+    border: solid 2px #2295bb;
+    border-radius: 3px;
+
+}
+
+#top{padding-top: 150px;}
+
+
+.modal-window {
+  /*will-change: visibility, opacity;*/
+  background-color: #ffffff;
+  /*opacity: 1;*/
+  position: relative;
+  height:100%;
+  width: 90%;
+  z-index: 20;
+  overflow: scroll;
+  max-width: 800px;
+  transition: 0.5s;
+  margin: 0 auto;
+  //text-align: center;
+  /*display: none;*/
+}
+
+#message{
+	/*display: none;*/
+	margin-top: -50px;
+	position: static;
+	height: 100vh;
+	opacity: 0.8;
+	transform:scaleY(0);
+}
+
+#message p{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.close_button{
+	position: absolute;
+	top: 14px;
+	right: 16px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+	#top{padding-top: 40px;}
+
+	section {
+		padding:70px 0;
+		margin-top:-70px;
+	}
+	ul {
+	padding-left: 0;
+	padding-top: 0px;
+	}
+
+	#vrbutton{
+		display: none;
+	}
+}
