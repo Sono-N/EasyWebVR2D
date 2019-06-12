@@ -10,11 +10,35 @@ this makes 2D designers and illustrators be able to easily create VR-like web si
 * image link and pop-up window
 
 ## Demo
-in preparation
+<https://sonon.uh-oh.jp/EasyWebVR2D_demo/>
 
 ## Usage
-1.Prepare images for background and object items.
-2.set image source, position and reaction when clicked in dataset.js 
+
+1. Prepare images for background and object items.
+2. set image source, position and reaction when clicked in dataset.js as follows
+
+```dataset.js
+//background img src
+bg_img_path = 'img/bg01.png';
+
+//img src
+var src_dic = { 
+	img00:'img00.png',
+  img01:'img01.png',
+};
+
+//position(display_width, display_height, longitude, latitude, radius = distance)
+var pos_dic = {
+	img00:new Array(150, 150, 0, 30, 300),
+  img01:new Array(250, 460, 72, 10, 300),
+};
+
+//when img clicked
+var click_action_dic ={
+	img00: function(){ makeMessage("<h1>Hello<h1> <p>Message</p>") },
+	img01: function(){ JumpToLink("https://www.google.com/")},
+};
+```
 
 ## Licence
 Distributed under the terms of the MIT license.
